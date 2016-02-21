@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Solid State by HTML5 UP</title>
+		<title>Web103</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -14,6 +14,54 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
+	<style media="screen">
+		@-webkit-keyframes FADEIN {
+		  0%   { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+		@-moz-keyframes FADEIN {
+		  0%   { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+		@-o-keyframes FADEIN {
+		  0%   { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+		@keyframes FADEIN {
+		  0%   { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+		#icon {
+			-webkit-animation: FADEIN 1s 1; /* Safari 4+ */
+			-moz-animation:    FADEIN 1s 1; /* Fx 5+ */
+			-o-animation:      FADEIN 1s 1; /* Opera 12+ */
+			animation:         FADEIN 1s 1;
+			position: relative;
+			width : 64px;
+			transform: translate(-71px, -4px);
+			-moz-transform: translate(-71px, -4px);
+			-webkit-transform: translate(-71px, -4px);
+			-ms-transform: translate(-71px, -4px);
+			border-radius: 50px;
+			-webkit-filter: hue-rotate(145deg);
+		}
+		@media screen and (max-width: 736px) {
+			#icon {
+				-webkit-animation: FADEIN 1s 1; /* Safari 4+ */
+			  -moz-animation:    FADEIN 1s 1; /* Fx 5+ */
+			  -o-animation:      FADEIN 1s 1; /* Opera 12+ */
+			  animation:         FADEIN 1s 1;
+				position: relative;
+				width : 44px;
+				transform: translate(-52px, -5px);
+				-moz-transform: translate(-52px, -5px);
+		    -webkit-transform: translate(-52px, -5px);
+		    -ms-transform: translate(-52px, -5px);
+				border-radius: 50px;
+				-webkit-filter: hue-rotate(145deg);
+			}
+		}
+	</style>
 	<body>
 
 		<!-- Page Wrapper -->
@@ -21,7 +69,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">NCCU MIS Database Implement Course</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -45,9 +93,24 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon fa-diamond"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							<div class="logo">
+								<span class="icon"></span>
+								<img id="icon" src="./images/nodejs.svg" alt="" />
+							</div>
+							<h2>NCCU MIS Database Implement Course</h2>
+							<p>
+								<a href="https://github.com/WJWang/nccu-mis-web" class="btn">
+									<i class="fa fa-github-alt fa-fw"></i>View on GitHub
+								</a>
+									&nbsp;&nbsp;
+								<a href="https://github.com/WJWang/nccu-mis-web/zipball/master" class="btn">
+									<i class="fa fa-file-archive-o fa-fw"></i>Download .zip
+								</a>
+									&nbsp;&nbsp;
+					      <a href="https://github.com/WJWang/nccu-mis-web/tarball/master" class="btn">
+									<i class="fa fa-folder-open-o fa-fw"></i>Download .tar.gz
+								</a>
+							</p>
 						</div>
 					</section>
 
@@ -57,7 +120,7 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="./images/onion.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Magna arcu feugiat</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -69,7 +132,7 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="./images/snow.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Tempus adipiscing</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -81,7 +144,7 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="./images/sleep.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Nullam dignissim</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -97,25 +160,25 @@
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3 class="major">Sed feugiat lorem</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="images/pic05.jpg" alt="" /></a>
 											<h3 class="major">Nisl placerat</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="images/pic06.jpg" alt="" /></a>
 											<h3 class="major">Ante fermentum</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<a href="https://www.facebook.com/onionnosnow/" class="image"><img src="images/pic07.jpg" alt="" /></a>
 											<h3 class="major">Fusce consequat</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
