@@ -31,35 +31,58 @@
 		  0%   { opacity: 0; }
 		  100% { opacity: 1; }
 		}
+		@media screen and (min-width: 1280px) {
+    /* 如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS。*/
+			#icon {
+				width : 68px;
+				transform: translate(-76px, -5px);
+				-moz-transform: translate(-76px, -5px);
+				-webkit-transform: translate(-76px, -5px);
+				-ms-transform: translate(-76px, -5px);
+			}
+		}
+
+		@media screen and (min-width: 736px) and (max-width: 1279px) {
+    /* 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。*/
+			#icon {
+				width : 64px;
+				transform: translate(-71px, -4px);
+				-moz-transform: translate(-71px, -4px);
+				-webkit-transform: translate(-71px, -4px);
+				-ms-transform: translate(-71px, -4px);
+			}
+		}
+
+		@media screen and (max-width: 735px) {
+    /* 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。*/
+			#icon {
+				width : 44px;
+				transform: translate(-52px, -5px);
+				-moz-transform: translate(-52px, -5px);
+				-webkit-transform: translate(-52px, -5px);
+				-ms-transform: translate(-52px, -5px);
+			}
+		}
+
+		@media screen and (max-device-width: 480px) {
+    /* 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。*/
+			#icon {
+				width : 44px;
+				transform: translate(-52px, -5px);
+				-moz-transform: translate(-52px, -5px);
+				-webkit-transform: translate(-52px, -5px);
+				-ms-transform: translate(-52px, -5px);
+			}
+		}
+
 		#icon {
 			-webkit-animation: FADEIN 1s 1; /* Safari 4+ */
 			-moz-animation:    FADEIN 1s 1; /* Fx 5+ */
 			-o-animation:      FADEIN 1s 1; /* Opera 12+ */
 			animation:         FADEIN 1s 1;
 			position: relative;
-			width : 64px;
-			transform: translate(-71px, -4px);
-			-moz-transform: translate(-71px, -4px);
-			-webkit-transform: translate(-71px, -4px);
-			-ms-transform: translate(-71px, -4px);
 			border-radius: 50px;
 			-webkit-filter: hue-rotate(145deg);
-		}
-		@media screen and (max-width: 736px) {
-			#icon {
-				-webkit-animation: FADEIN 1s 1; /* Safari 4+ */
-			  -moz-animation:    FADEIN 1s 1; /* Fx 5+ */
-			  -o-animation:      FADEIN 1s 1; /* Opera 12+ */
-			  animation:         FADEIN 1s 1;
-				position: relative;
-				width : 44px;
-				transform: translate(-52px, -5px);
-				-moz-transform: translate(-52px, -5px);
-		    -webkit-transform: translate(-52px, -5px);
-		    -ms-transform: translate(-52px, -5px);
-				border-radius: 50px;
-				-webkit-filter: hue-rotate(145deg);
-			}
 		}
 	</style>
 	<body>
