@@ -27,14 +27,25 @@
 		  0%   { opacity: 0; }
 		  100% { opacity: 1; }
 		}
-		@media screen and (min-width: 1280px) {
+		@media screen and (min-width: 1680px) {
+    /* 如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS。*/
+			#icon {
+				width : 89px;
+				transform: translate(-97px, -5px);
+				-moz-transform: translate(-97px, -5px);
+				-webkit-transform: translate(-97px, -5px);
+				-ms-transform: translate(-97px, -5px);
+			}
+		}
+
+		@media screen and (min-width: 1280px) and (max-width: 1679px) {
     /* 如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS。*/
 			#icon {
 				width : 68px;
-				transform: translate(-76px, -5px);
-				-moz-transform: translate(-76px, -5px);
-				-webkit-transform: translate(-76px, -5px);
-				-ms-transform: translate(-76px, -5px);
+				transform: translate(-78px, -5px);
+				-moz-transform: translate(-78px, -5px);
+				-webkit-transform: translate(-78px, -5px);
+				-ms-transform: translate(-78px, -5px);
 			}
 		}
 
@@ -403,6 +414,10 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('body').css('background-image','linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("./images/cat0'+(Math.ceil((Math.random()*10))%6+1)+'.jpg")');
+				});
+			</script>
 	</body>
 </html>
