@@ -47,19 +47,204 @@
 			<div class="slides">
 				<section>
 					<h1>Git Basis & HTML</h1>
-					<h3>The HTML Presentation Framework</h3>
 					<p>
 						<small>Created by <a href="http://wjwang-blog.logdown.com/">William Wang</a> / <a href="https://github.com/WJWang">WJWang</a></small>
 					</p>
 				</section>
-
+				<!-- self intro -->
 				<section>
-					<h2>Hello There</h2>
+					<h2>在我們開始之前...<span class="fragment">自我介紹</span></h2>
 					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						<span class="fragment">103級 </span><span class="fragment">政大資管所...</span><span class="fragment">碩二</span> <br>
+						<span class="fragment">99級 </span><span class="fragment">政大資管系...</span><span class="fragment">畢業</span>
+						<h4 class="fragment">這堂課要聯絡我的信箱 </h4>
+						<span class="fragment">
+							<a href="mailto:anderson.thereisnospoon@gmail.com">anderson.thereisnospoon@gmail.com</a>
+						</span>
+
+						<h4 class="fragment">這堂課的facebook </h4>
+						<span class="fragment">
+							<a href="https://www.facebook.com/groups/NCCUMIS.DBMS/">https://www.facebook.com/groups/NCCUMIS.DBMS/</a>
+						</span>
+						<br>
+						<h4 class="fragment">這堂課的Office hours</h4>
+							<span class="fragment"> 禮拜四的下午，也就是等等下課之後，請先寄信預約</span> <br/>
+						<span class="fragment">
+							白貓叫非雪，虎斑叫Onion <span class="fragment">等等寫code寫累了、或是覺得太無聊，可以去
+								<a href="../index.html">課程網站</a> 或
+								<a href="https://www.facebook.com/onionnosnow/">他們的專頁</a>
+								看他們的照片</span>
+						</span>
 					</p>
 				</section>
+				<!-- intro -->
+				<section>
+					<section>
+						<h2>這堂課要學什麼-Web程式設計</h2>
+						<ul>
+							<li>寫網頁？</li>
+							<li>Responsive Web Design(RWD)?</li>
+							<li>寫網站？</li>
+							<li>前端？後端？（Front End, Back End)?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>這堂課要學什麼-資料庫設計</h2>
+						<ul>
+							<li>關聯資料表？</li>
+							<li>正規劃？</li>
+							<li>Entity Relation Digram(ERD)？</li>
+							<li>SQL?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>這堂課要學什麼-協同開發工具</h2>
+						<ul>
+							<li>版本控制器？</li>
+							<li>Git?</li>
+							<li>Github?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>這堂課的目標</h2>
+						<ul>
+							<li>自己在做什麼</li>
+							<li>還要學什麼</li>
+							<li>學會找資源</li>
+							<li>團隊合作</li>
+						</ul>
+					</section>
+					<section>
+						<h1>今天會上好上滿</h1>
+						<p class="fragment">開始囉...</p>
+					</section>
+				</section>
+				<!--  先來準備架站跟開發的環境吧 -->
+				<section>
+					<section>
+						<h2>安裝Ubuntu作業環境</h2>
+						<p>使用virtualbox安裝虛擬機器作業系統環境</p>
+						<p class="fragment">如果你是用mac而且是用MacOS了，用的已經是Unix like的環境，不用再裝一次ubuntu了</p>
+						<p class="fragment">如果你是用macOS了，這段真的拜託你可以跳過</p>
+						<p class="fragment">很重要所以講三次，去年有人用mac又裝了虛擬機的ubuntu，我真的很想搥他</p>
+					</section>
+					<section>
+						<iframe width="765" height="500" src="https://www.youtube.com/embed/55W5Hs55iDM" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section>
+						<h2>
+							因為我們是要使用nodejs進行開發
+						</h2>
+						<p>
+							所以在剛剛裝好的機器裡面要安裝node的環境 <br>
+							<a target="_blank" href="https://nodejs.org/en/">Nodejs的官網，請到這邊直接下載安裝</a>
+						</p>
+					</section>
 
+					<section data-markdown>
+
+						<script type="text/template">
+							## 安裝完成後，請打開你的terminal(終端機)
+							###檢查node版本
+							```
+							$ node -v -> 有跳出版本表示正確安裝了
+							```
+							###檢查npm版本
+							```
+							$ npm -v -> 有跳出版本表示正確安裝了
+							```
+						</script>
+					</section>
+					<section>
+						<h3>這個部分大家回家再安裝吧...有問題的話再問我</h3>
+					</section>
+				</section>
+				<!-- 什麼是網頁、網站 -->
+				<section>
+					<section>
+						<h1>什麼是網頁、網站</h1>
+					</section>
+					<section>
+						<p>
+							網際網路（英語：Internet），是網路與網路之間所串連成的龐大網路，這些網路以一組標準的網路TCP/IP協定族相連，鏈接全世界幾十億個裝置，形成邏輯上的單一巨大國際網絡。
+							政府的，學術界的，企業的和政府的網絡所構成，通過電子，無線和光纖網路技術等等一系列廣泛的技術聯繫在一起。
+							這種將電腦網路互相聯接在一起的方法可稱作「網路互聯」，在這基礎上發展出覆蓋全世界的全球性互聯網路稱網際網路，即是互相連接一起的網路。
+							網際網路並不等同全球資訊網（WWW），全球資訊網只是一個基於超文字相互鏈接而成的全球性系統，且是網際網路所能提供的服務其中之一...
+						</p>
+					</section>
+					<section>
+						<h3>
+							關於這些跟網路通訊有關的有很多東西要說
+						</h3>
+						<h2>之後的企業資料通訊會教...</h2>
+						<p>
+							我們這堂課只會簡單說明我們會用到的東西
+						</p>
+					</section>
+					<section>
+						<h3>
+							如何把A電腦上的資料丟給B電腦？
+						</h3>
+						<p>
+							<span class="fragment">USB, 光碟？or 網路</span>
+						</p>
+					</section>
+					<section>
+						<h3>
+							透過網路傳輸-要讓A電腦知道B電腦在哪裡
+						</h3>
+						<p class="fragment">電腦裡會有實體的網路卡(NIC)，網路卡會有網路MAC卡號(physical address)，接上網路線可以把訊號轉換進電腦裡，讓我們上網</p>
+						<p class="fragment">Internet Protocol Address (IP address)就是電腦在網路世界裡的位置</p>
+						<p class="fragment">自己稱本身的電腦：本機(localhost, 127.0.0.1)</p>
+						<p class="fragment">政治大學的電腦：140.119.xxx.xxx</p>
+					</section>
+					<section>
+						<h3>
+							電腦太多了，IP很難記 - 網域(domain)
+						</h3>
+						<p>
+							有了網域，就可以讓IP好記多了
+						</p>
+						<p class="fragment">政治大學：140.119.168.10 => www.nccu.edu.tw</p>
+					</section>
+					<section>
+						<h4>所以你們應該可以看懂這個笑話了</h4>
+							<img style="height:80vh;" src="https://scontent.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12743671_976780575746909_7983211676683985548_n.jpg?oh=1ee67f5ff44151a47fa1b22e4fa9e6d3&oe=57691064" alt="">
+					</section>
+					<section>
+						<h3>A知道B的位址還不夠，還需要知道檔案在哪裡</h3>
+						<p>B需要架設網站讓A來存取，要讓A能知道哪些檔案可以透過網路下載</p>
+						<p>一個完整的檔案位置描述</p>
+						<p>B的網路IP位置+B的檔案位置</p>
+					</section>
+					<section>
+						<h3>政治大學網站首頁的檔案</h3>
+						<p>140.119.168.10/index.html</p>
+						<p class="fragment"> www.nccu.edu.tw/index.html</p>
+						<p class="fragment">因為瀏覽器會把index.html當作預設所以可以不用寫=> www.nccu.edu.tw</p>
+						<p class="fragment">我們是透過瀏覽器使用HTTP這種傳輸協定來拿到這個檔案的 => http://www.nccu.edu.tw</p>
+					</section>
+					<section>
+						<h3>政大首頁的檔案</h3>
+						<p>他原本應該是長這樣的:<br/>
+							<a target="_blank" href="view-source:http://140.119.168.10/index.html">view-source:http://140.119.168.10/index.html</a>
+						</p>
+						<p class="fragment">這就是一個HTML檔，用html這樣的語言來描述的檔案，是網際網路共通的語言，我們用來上網的瀏覽器都會支援這樣的檔案格式，並轉換成我們看得懂好讀的頁面。</p>
+						<h5 class="fragment">你現在可以對這份投影片點右鍵看檢查元素，它也是一份html檔案</h5>
+						<p class="fragment">
+							詳細的機制可以上wiki查查，或是先參考<a target="_blank" href="http://yikebocai.com/2014/05/http-request-lifecycle-1/">這一份</a>
+						</p>
+					</section>
+				</section>
+
+				<!-- git -->
+				<section>
+					TODO
+				</section>
+				<!-- html -->
+				<section>
+					TODO
+				</section>
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
