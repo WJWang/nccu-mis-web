@@ -143,23 +143,46 @@
 				<section>
 					<section>
 						<h2>函式(Function)</h2>
-
+						<ul>
+							<li>
+								是JS中的第一級物件（first-class object）[<a href="https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E9%A1%9E%E7%89%A9%E4%BB%B6">Ref</a>]
+							</li>
+							<li>
+								提供了作用域(scope)
+							</li>
+						</ul>
 					</section>
 					<section>
-						<h2>函式實字</h2>
+						<h3>學好function就學好一半的JS</h3>
+						<h3 class="fragment">...應該拉</h3>
+					</section>
+					<section>
+						<h1>函式也是物件</h1>
+						<ul>
+							<li>runtime 動態建立</li>
+							<li>可以被assign給其他變數、refrence 複製給其他變數、擴充、刪除</li>
+							<li>可以當作參數傳遞</li>
+							<li>有自己的屬性或是方法</li>
+						</ul>
+					</section>
+					<section>
+						<h2>函式</h2>
 						<code class='hljs'>
 							<pre>
-			var add = fucntion(a, b) {
+			//具名函式 named function expression
+			var add = fucntion add(a, b) {
+				return a+b;
+			};
+
+			//不具名函式 anonymous function
+			var add = function(a, b) {
+				return a+b;
+			};
+
+			//函式宣告式function declaration
+			function add(a, b) {
 				return a+b;
 			}
-
-			var result = (function(a, b) {
-				return a+b;
-			}(3,4));
-
-			(function(a, b) {
-				return a+b;
-			}(3,4));
 							</pre>
 						</code>
 					</section>
