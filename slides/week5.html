@@ -64,6 +64,20 @@
 
 				<section>
 					<section>
+						<h2>關聯式資料庫(Relational Database)</h2>
+						<p>今天要說的是如何使用關聯式資料庫</p>
+						<p>就是如何操作一個存放資料的應用程式</p>
+					</section>
+					<section>
+						<h2>市面上的關聯式資料庫</h2>
+						<ul>
+							<li>Microsoft的SQLserver</li>
+							<li>IBM的DB2</li>
+							<li>Oracle的OracleDB</li>
+							<li>Opensource(免錢的)- Firebird, MariaDB, MySQL, PostgreSQL</li>
+						</ul>
+					</section>
+					<section>
 						<h1>Install MySQL Database</h1>
 					</section>
 					<section>
@@ -77,12 +91,51 @@
 						<li>Add Index</li>
 						<li>Create Relations</li>
 					</section>
+					<section>
+						<a href="http://sjchen.im.nuu.edu.tw/Database/99/MySQL_Ch4.pdf">Ref</a>
+						<br>
+						<object style="width:850px;height:650px" data="http://sjchen.im.nuu.edu.tw/Database/99/MySQL_Ch4.pdf" type="application/pdf">
+				        <embed src="http://sjchen.im.nuu.edu.tw/Database/99/MySQL_Ch4.pdf" type="application/pdf" />
+				    </object>
+					</section>
+					<section>
+						<h2>除了phpMyAdmin還有很多GUI的solution可以連上MySQL</h2>
+						<p>如果只是為了圖形介面連上DB，phpMyAdmin不一定是最好的選擇，因為phpMyAdmin必須先有Apache跟php的條件，你可以選擇：</p>
+						<ul>
+							<li><a href="https://www.mysql.com/products/workbench/">MySQL Workbence </a></li>
+							<li><a href="http://www.sequelpro.com/">Sequel Pro</a></li>
+						</ul>
+
+					</section>
 				</section>
+
 				<section>
-					<h2>Manipulate Mysql with Node</h2>
-					<li>Connected database</li>
-					<li>CRUD Data</li>
+					<section>
+						<h2>Introduce NodeJS</h2>
+						<li>module import and export</li>
+						<li>Libraries</li>
+					</section>
+					<section>
+						<ul>
+							<li>Use requier() to import modeule</li>
+							<li>Use modules.export to build your modules</li>
+						</ul>
+					</section>
+					<section>
+						<h2>這堂課未來可能會用到的</h2>
+						<ul>
+							<li> webapplication framework <a href="http://expressjs.com/">express</a> and <a href="http://expressjs.com/zh-tw/starter/generator.html">express generator</a></li>
+							<li> mysql libs <a href="https://github.com/felixge/node-mysql">node-mysql</a></li>
+							<li> Control Flow <a href="https://github.com/caolan/async">async</a></li>
+							<li> Collection常用的操作 <a href="https://lodash.com/docs#join">lodash</a></li>
+							<li> Control Flow with Promise <a href="http://bluebirdjs.com/docs/getting-started.html">bluebird</a>, <a href="http://documentup.com/kriskowal/q/">q</a></li>
+						</ul>
+					</section>
+					<section>
+						<p>Demo how to connet to a database</p>
+					</section>
 				</section>
+
 			</div>
 
 		</div>
