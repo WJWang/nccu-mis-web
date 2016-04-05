@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>MYSQL AND BACKEND ENVIRONMENT SETTING</title>
+		<title>Node & Express</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -46,68 +46,103 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
+
 				<section>
-					<h1>MYSQL AND BACKEND ENVIRONMENT SETTING </h1>
+					<h1>Node & EXPRESS</h1>
 					<p>
 						<small>Created by <a href="http://wjwang-blog.logdown.com/">William Wang</a> / <a href="https://github.com/WJWang">WJWang</a></small>
 					</p>
 				</section>
-				<section>
-					<section>
-						<h1>Recap</h1>
-						<ul>
-							<li>Backend</li>
-							<li>Server side / Client side</li>
-						</ul>
-					</section>
-				</section>
 
 				<section>
 					<section>
-						<h2>關聯式資料庫(Relational Database)</h2>
-						<p>今天要說的是如何使用關聯式資料庫</p>
-						<p>就是如何操作一個存放資料的應用程式</p>
+						<h2>Introduce NodeJS</h2>
+						<li>
+							A JavaScript runtime built on Chrome's V8 JavaScript engine.
+						</li>
+						<li>
+							An event-driven, non-blocking I/O model that makes it lightweight and efficient.
+						</li>
+						<li>
+							Package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+						</li>
 					</section>
 					<section>
-						<h2>市面上的關聯式資料庫</h2>
+						<h2>NodeJS Features</h2>
 						<ul>
-							<li>Microsoft的SQLserver</li>
-							<li>IBM的DB2</li>
-							<li>Oracle的OracleDB</li>
-							<li>Opensource(免錢的)- Firebird, MariaDB, MySQL, PostgreSQL</li>
+							<li>Asynchronous and Non-blocking I/O</li>
+							<li>Event & Callback</li>
+							<li>Single Thread</li>
+							<li>Cross Platform(<a href="http://libuv.org/">libuv</a>)</li>
 						</ul>
 					</section>
 					<section>
-						<h1>Install MySQL Database</h1>
-					</section>
-					<section>
-						<h2>Install with <a href="https://www.apachefriends.org/zh_tw/index.html">XAMPP</a></h2>
-						<h2>Install with <a href="https://www.mamp.info/en/">MAMP</a></h2>
-					</section>
-					<section>
-						<h2>Manipulate Mysql with phpMyAdmin</h2>
-						<li>Create database</li>
-						<li>Create Table & CRUD Data & turncate table</li>
-						<li>Add Index</li>
-						<li>Create Relations</li>
-					</section>
-					<section>
-						<a href="http://sjchen.im.nuu.edu.tw/Database/99/MySQL_Ch4.pdf">Ref</a>
-						<br>
-						<object style="width:850px;height:650px" data="http://sjchen.im.nuu.edu.tw/Database/99/MySQL_Ch4.pdf" type="application/pdf">
-				        <embed src="http://sjchen.im.nuu.edu.tw/Database/99/MySQL_Ch4.pdf" type="application/pdf" />
-				    </object>
-					</section>
-					<section>
-						<h2>除了phpMyAdmin還有很多GUI的solution可以連上MySQL</h2>
-						<p>如果只是為了圖形介面連上DB，phpMyAdmin不一定是最好的選擇，因為phpMyAdmin必須先有Apache跟php的條件，你可以選擇：</p>
+						<h2>
+							Modules
+						</h2>
 						<ul>
-							<li><a href="https://www.mysql.com/products/workbench/">MySQL Workbence </a></li>
-							<li><a href="http://www.sequelpro.com/">Sequel Pro</a></li>
+							<li>Use requier() to import modeule</li>
+							<li>Use modules.export to build your modules</li>
 						</ul>
-
+					</section>
+					<section>
+						<h2>Libraries</h2>
+						<ul>
+							<li> webapplication framework <a href="http://expressjs.com/">express</a> and <a href="http://expressjs.com/zh-tw/starter/generator.html">express generator</a></li>
+							<li> mysql libs <a href="https://github.com/felixge/node-mysql">node-mysql</a></li>
+							<li> Control Flow <a href="https://github.com/caolan/async">async</a></li>
+							<li> Collection常用的操作 <a href="https://lodash.com/docs#join">lodash</a></li>
+							<li> Control Flow with Promise <a href="http://bluebirdjs.com/docs/getting-started.html">bluebird</a>, <a href="http://documentup.com/kriskowal/q/">q</a></li>
+						</ul>
+					</section>
+					<section>
+						<p>Demo(1) Connet to a database</p>
+						<p>Demo(2) Send request to download images</p>
 					</section>
 				</section>
+				<section>
+					<section>
+					<h2><a href="http://expressjs.com/zh-tw/">Express</a> </h2>
+						<p>- web application framework in nodejs</p>
+						<ul>
+							<li>Application</li>
+							<li>Request</li>
+							<li>Reseponse</li>
+							<li>Route</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Recap</h2>
+						<ul>
+							<li>callback in javascript</li>
+							<li>scope in javascript</li>
+							<li>this in javascript</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Initial</h2>
+						<p><a href="http://expressjs.com/zh-tw/starter/generator.html">Using express-generator</a></p>
+						<ul>
+							<li>Hint:這堂課使用css跟ejs</li>
+						</ul>
+					</section>
+					<section>
+						<h2>檔案結構</h2>
+						<ul>
+							<li>package.json - 管理你的packages, libs 跟一些 script</li>
+							<li>app.js, bin/www - express 的進入點</li>
+							<li>public/ - 一些公開的css, image, js ...(client side會用得到的resource)</li>
+							<li>views/ - 你的ejs(就是產生html的模板)</li>
+							<li>routes/ -  根據request url不同來處理http request,資料庫連接拿資料跟決定用哪些畫面來回應</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Demo</h2>
+					</section>
+				</section>
+
+
 			</div>
 
 		</div>
